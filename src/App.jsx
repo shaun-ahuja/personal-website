@@ -2,6 +2,7 @@
 import Name from './components/Name.jsx'
 import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
+import Experience from './components/Experience.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Name />
       <About />
+      <Experience />
 
     </>
   )

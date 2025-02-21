@@ -57,7 +57,7 @@
   padding-bottom: 6px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
 
@@ -67,7 +67,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 .social-media {
@@ -156,49 +156,62 @@
   cursor: pointer;
 }
 
-/* .about-box {
+.about-container,
+.experience-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} */
 
-.about-header {
+  aspect-ratio: 16 / 7;
+  width: min(80vw, 900px);
+
+  max-width: 90%;
+  /* padding: 1vh 2vw; */
+  padding-left: 3vw;
+}
+
+.about-header,
+.experience-header {
   color: rgb(237, 237, 237);
-  font-size: min(1.75rem, 8vw);
-  font-weight: 300;
+  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  font-weight: 400;
   letter-spacing: -0.08em;
   word-spacing: 0.1em;
   font-family: 'Inter', sans-serif;
-
+  margin-bottom: 4vh;
 }
 
-.description-one {
-  color: rgb(159, 159, 159);
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  font-weight: 350;
-  width: min(90%, 93ch);
-  letter-spacing: -0.03em;
-  word-spacing: 0.05em;
-}
 
-.description-two {
-  color: rgb(159, 159, 159);
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  font-weight: 350;
-  width: min(90%, 93ch);
-  letter-spacing: -0.03em;
-  word-spacing: 0.05em;
-}
-
+.description-one,
+.description-two,
 .description-three {
   color: rgb(159, 159, 159);
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  font-weight: 350;
-  width: min(90%, 93ch);
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 400;
+  width: min(100%, 100ch);
   letter-spacing: -0.03em;
   word-spacing: 0.05em;
+  font-family: 'Inter', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,16 +222,16 @@
   .nameBox {
     width: 85vw;
     /* Slightly wider for mobile */
-    max-width: 350px;
+    max-width: 450px;
     /* Prevents it from being too large */
-    padding: 2vh 3vw;
+    padding: 0vh 6vw;
     /* Less padding for better visibility */
     aspect-ratio: 4 / 3;
     /* More squared for better readability */
   }
 
   .name-title {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
     /* Scales smaller */
   }
 
