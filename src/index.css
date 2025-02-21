@@ -6,8 +6,16 @@
   margin: 0;
 }
 
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .nameBox {
   box-shadow: 0 0 0 1px rgb(42, 41, 41);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +29,8 @@
 
   text-align: center;
   font-family: 'Inter', sans-serif;
+
+  margin-bottom: 7vh;
 }
 
 .name-title {
@@ -33,18 +43,7 @@
   flex-shrink: 1;
 }
 
-/* .name-description{
-  color: rgb(159, 159, 159);
-  font-size: min(1.05rem, 2.3vw);
-  max-width: 40ch; 
-  text-wrap: balance;
-  font-weight: min(1.05rem, 2.5vw);
-  margin-top: 1vh;
-  margin-bottom: 5vh;
-  letter-spacing: -0.03em;
-  word-spacing: 0.05em;
-  flex-shrink: 1;
-} */
+
 
 .resume-button {
   color: rgb(226, 226, 226);
@@ -157,7 +156,49 @@
   cursor: pointer;
 }
 
+/* .about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
 
+.about-header {
+  color: rgb(237, 237, 237);
+  font-size: min(1.75rem, 8vw);
+  font-weight: 300;
+  letter-spacing: -0.08em;
+  word-spacing: 0.1em;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.description-one {
+  color: rgb(159, 159, 159);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 350;
+  width: min(90%, 93ch);
+  letter-spacing: -0.03em;
+  word-spacing: 0.05em;
+}
+
+.description-two {
+  color: rgb(159, 159, 159);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 350;
+  width: min(90%, 93ch);
+  letter-spacing: -0.03em;
+  word-spacing: 0.05em;
+}
+
+.description-three {
+  color: rgb(159, 159, 159);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 350;
+  width: min(90%, 93ch);
+  letter-spacing: -0.03em;
+  word-spacing: 0.05em;
+}
 
 
 
