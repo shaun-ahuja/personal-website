@@ -1,13 +1,39 @@
-function Name(){
+function Name() {
 
-    return(
-        
+    return (
+
         <div className="nameBox">
             <h1 className="name-title">Shaun Ahuja</h1>
-            <p className="name-description">Software Developer </p>
+            <div className="social-media-container">
+                <a href="mailto:ahuja.shaun00@gmail.com" rel="noopener noreferrer">
+                    <img src="./src/assets/EmailLogo.png" className="social-media" alt="Email" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/shaun-ahuja/" target="_blank" rel="noopener noreferrer">
+                    <img src="./src/assets/LinkedinLogo.png" className="social-media" alt="LinkedIn" />
+                </a>
+
+                <a href="https://x.com/shaun_ahuja" target="_blank" rel="noopener noreferrer">
+                    <img src="./src/assets/XLogo.png" className="social-media" alt="X" />
+                </a>
+
+                <a href="https://github.com/shaun-ahuja" target="_blank" rel="noopener noreferrer">
+                    <img src="./src/assets/GitHubLogo.png" className="social-media" alt="GitHub" />
+                </a>
+            </div>
+
+
+            <a href="./src/assets/ShaunResume.pdf" target="_blank" rel="noopener noreferrer">
+                <button className="resume-button">Resume</button>
+            </a>
+
+
             <p className="personal-description">
-            Software Engineer based in Toronto and New York, building passion projects and shipping meaningful code. </p>
+                Software Engineer based in Toronto and New York</p>
+
+
         </div>
+
 
     );
 

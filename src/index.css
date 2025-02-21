@@ -6,43 +6,203 @@
   margin: 0;
 }
 
-.nameBox{
+.nameBox {
   box-shadow: 0 0 0 1px rgb(42, 41, 41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 16 / 7;
+  width: min(80vw, 800px);
+
+  max-width: 90%;
+  padding: 3vh 4vw;
+
   text-align: center;
-  display: inline-block;
-  height: 57vh;
-  width: 80vh;
-  margin: 10.5vh auto;
   font-family: 'Inter', sans-serif;
-  
 }
 
-.name-title{
+.name-title {
   color: rgb(237, 237, 237);
-  font-size: 4rem;
+  font-size: min(4.5rem, 8vw);
   font-weight: 500;
   letter-spacing: -0.08em;
   word-spacing: 0.1em;
-  margin-top: 9vh;
+  margin: 0;
+  flex-shrink: 1;
 }
 
-.name-description{
+/* .name-description{
   color: rgb(159, 159, 159);
-  font-size: 1.05rem;
-  font-weight: 350;
-  margin-top: -3vh;
+  font-size: min(1.05rem, 2.3vw);
+  max-width: 40ch; 
+  text-wrap: balance;
+  font-weight: min(1.05rem, 2.5vw);
+  margin-top: 1vh;
+  margin-bottom: 5vh;
   letter-spacing: -0.03em;
   word-spacing: 0.05em;
-}
+  flex-shrink: 1;
+} */
 
-.personal-description{
-  color: rgb(159, 159, 159);
+.resume-button {
+  color: rgb(226, 226, 226);
+  background-color: rgb(31, 31, 31);
   font-size: 1.2rem;
+  font-weight: 150;
+  border-radius: 50px;
+  border: solid rgb(0, 0, 0);
+  border-width: thin;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 4vh;
+}
+
+
+.social-media-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5vh;
+}
+
+.social-media {
+  /* max-width: 2vw; */
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media:hover {
+  transform: scale(1.2);
+}
+
+.resume-button:hover {
+  color: rgb(159, 159, 159);
+  background-color: rgb(0, 0, 0);
+  border: solid rgb(45, 45, 45);
+  border-width: thin;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.personal-description {
+  color: rgb(159, 159, 159);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   font-weight: 350;
-  margin-top: 10vh;
-  margin-left: 10vw;
-  width: 70vw;
+  width: min(90%, 50ch);
   letter-spacing: -0.03em;
   word-spacing: 0.05em;
+}
+
+
+.navbar {
+  display: flex;
+  width: 100%;
+  margin-top: 1vh;
+  margin-bottom: 7vh;
+
+}
+
+.name-logo {
+  color: rgb(237, 237, 237);
+  background: none;
+  border: none;
+  width: 7vh;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.08em;
+  word-spacing: 0.1em;
   text-align: center;
+  margin-right: 1vw;
+
+}
+
+.name-logo:hover {
+  color: rgb(226, 226, 226);
+  background-color: rgb(31, 31, 31);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+
+
+.about-button,
+.projects-button,
+.experience-button {
+  color: rgb(159, 159, 159);
+  background: none;
+  font-size: 0.9rem;
+  font-weight: 150;
+  margin-left: 2vh;
+  border-radius: 50px;
+  border: solid rgb(45, 45, 45);
+  border-width: thin;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.about-button:hover,
+.projects-button:hover,
+.experience-button:hover {
+  color: rgb(226, 226, 226);
+  background-color: rgb(31, 31, 31);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .nameBox {
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 350px;
+    /* Prevents it from being too large */
+    padding: 2vh 3vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+    /* More squared for better readability */
+  }
+
+  .name-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    /* Scales smaller */
+  }
+
+  .name-description {
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    /* Readable on mobile */
+    max-width: 30ch;
+    /* Prevents text from stretching */
+  }
+
+  .navbar {
+    /* gap: 2vw; More space between elements */
+    padding: 1vh 3vw;
+  }
+
+  .name-logo {
+    font-size: 0.6rem;
+    /* Reduce logo size */
+  }
+
+  .about-button,
+  .projects-button {
+    font-size: 0.7rem;
+    /* Shrink text */
+    padding: 1px 2px;
+    /* Reduce padding */
+  }
 }
