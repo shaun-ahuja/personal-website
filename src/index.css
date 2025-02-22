@@ -166,6 +166,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* align-items: center;
+  justify-content: center; */
   aspect-ratio: 16 / 7;
   width: min(80vw, 800px);
   /* Match the width of .box */

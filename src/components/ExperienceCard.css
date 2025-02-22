@@ -11,6 +11,7 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1rem;
+    margin-bottom: 2vh;
     /* aspect-ratio: 16 / 1; */
     width: min(80vw, 900px);
     max-width: 100%;
@@ -27,8 +28,8 @@
 
 .job-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -40,14 +41,42 @@
     word-spacing: 0.1em;
     margin: 0;
     line-height: 1;
+    padding-top: 0.5vh;
 }
 
 .job-details {
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
     line-height: 1;
+}
+
+.sunlife-logo {
+    width: 60px;
+    margin-top: 0.5rem;
+
+}
+
+.meta-logo {
+    width: 35px;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+
+}
+
+.sharpstakes-logo {
+    width: 40px;
+    margin-top: 0.4rem;
+    margin-right: 0.5rem;
+
+}
+
+.gnv-logo {
+    width: 80px;
+    margin-top: 0.7rem;
+
 }
 
 .job-date {
@@ -80,8 +109,8 @@
     word-spacing: 0.1em;
     margin: 0;
     flex-shrink: 1;
-
-    padding-bottom: 2vh;
+    padding-bottom: 1.4vh;
+    padding-top: 0.3vh;
 }
 
 
