@@ -49,8 +49,9 @@
 
 .projects-container {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .experience-box,
@@ -70,10 +71,29 @@
   margin-bottom: 1.5vh;
 }
 
+.song-intro {
+  color: rgb(237, 237, 237);
+  font-size: clamp(1rem, 3.5vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: -0.08em;
+  word-spacing: 0.1em;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: -1vh;
+}
+
+.song-justification {
+  color: rgb(161, 161, 170);
+  font-size: min(1.05rem, 8vw);
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.7vh;
+}
+
 .spotify-page {
-  /* margin-bottom: 5vh; */
   padding-bottom: 10vh;
 }
+
+
 
 
 @media (max-width: 600px) {
