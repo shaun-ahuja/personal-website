@@ -3,7 +3,7 @@ import Name from './components/Name.jsx'
 import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
-import ExperienceCard from './components/ExperienceCard.jsx'
+import Projects from './components/Projects.jsx'
 
 
 
@@ -16,6 +16,7 @@ function App() {
       <Name />
       <About />
       <Experience />
+      <Projects />
 
 
     </>
