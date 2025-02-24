@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
-
+import Spotify from './components/Spotify.jsx'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
-
+      <Spotify />
 
     </>
   )
