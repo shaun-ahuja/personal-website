@@ -33,132 +33,6 @@
   margin-bottom: 7vh;
 }
 
-.name-title {
-  color: rgb(237, 237, 237);
-  font-size: min(4.5rem, 8vw);
-  font-weight: 500;
-  letter-spacing: -0.08em;
-  word-spacing: 0.1em;
-  margin: 0;
-  flex-shrink: 1;
-}
-
-
-
-.resume-button {
-  color: rgb(226, 226, 226);
-  background-color: rgb(31, 31, 31);
-  font-size: 1.2rem;
-  font-weight: 150;
-  border-radius: 50px;
-  border: solid rgb(0, 0, 0);
-  border-width: thin;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 2vh;
-}
-
-
-.social-media-container {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 3vh;
-}
-
-.social-media {
-  /* max-width: 2vw; */
-  height: 24px;
-  width: 24px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social-media:hover {
-  transform: scale(1.2);
-}
-
-.resume-button:hover {
-  color: rgb(159, 159, 159);
-  background-color: rgb(0, 0, 0);
-  border: solid rgb(45, 45, 45);
-  border-width: thin;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.personal-description {
-  color: rgb(159, 159, 159);
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  font-weight: 350;
-  width: min(90%, 50ch);
-  letter-spacing: -0.03em;
-  word-spacing: 0.05em;
-}
-
-
-.navbar {
-  display: flex;
-  width: 100%;
-  margin-top: 1vh;
-  margin-bottom: 7vh;
-
-}
-
-.name-logo {
-  color: rgb(237, 237, 237);
-  background: none;
-  border: none;
-  width: 7vh;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: -0.08em;
-  word-spacing: 0.1em;
-  text-align: center;
-  margin-right: 1vw;
-
-}
-
-.name-logo:hover {
-  color: rgb(226, 226, 226);
-  background-color: rgb(31, 31, 31);
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-
-
-
-.about-button,
-.projects-button,
-.experience-button {
-  color: rgb(159, 159, 159);
-  background: none;
-  font-size: 0.9rem;
-  font-weight: 150;
-  margin-left: 2vh;
-  border-radius: 50px;
-  border: solid rgb(45, 45, 45);
-  border-width: thin;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.about-button:hover,
-.projects-button:hover,
-.experience-button:hover {
-  color: rgb(226, 226, 226);
-  background-color: rgb(31, 31, 31);
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-
-
-
 
 .about-container,
 .experience-container {
@@ -166,8 +40,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* align-items: center;
-  justify-content: center; */
   aspect-ratio: 16 / 7;
   width: min(80vw, 800px);
   /* Match the width of .box */
@@ -177,11 +49,8 @@
 
 .projects-container {
   display: flex;
-  /* places cards side by side */
   gap: 2rem;
-  /* spacing between cards */
   flex-wrap: wrap;
-  /* allows wrapping on smaller screens, optional */
 }
 
 .experience-box,
@@ -189,28 +58,6 @@
   margin-bottom: 6vh;
 }
 
-.about-header {
-  color: rgb(237, 237, 237);
-  font-size: clamp(1rem, 3.5vw, 1.8rem);
-  font-weight: 400;
-  letter-spacing: -0.08em;
-  word-spacing: 0.1em;
-  font-family: 'Inter', sans-serif;
-}
-
-
-
-.description-one,
-.description-two,
-.description-three {
-  color: rgb(159, 159, 159);
-  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
-  font-weight: 400;
-  width: min(100%, 100ch);
-  letter-spacing: -0.03em;
-  word-spacing: 0.05em;
-  font-family: 'Inter', sans-serif;
-}
 
 .experience-header,
 .projects-header {
@@ -222,23 +69,6 @@
   font-family: 'Inter', sans-serif;
   margin-bottom: 1.5vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
