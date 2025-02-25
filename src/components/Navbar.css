@@ -3,7 +3,7 @@
     width: 100%;
     margin-top: 1vh;
     margin-bottom: 7vh;
-
+    justify-content: space-between;
 }
 
 .name-logo {
@@ -25,6 +25,11 @@
     background-color: rgb(31, 31, 31);
     transition: 0.2s;
     cursor: pointer;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
 }
 
 

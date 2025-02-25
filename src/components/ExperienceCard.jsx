@@ -4,7 +4,7 @@ import "./ExperienceCard.css"
 export const ExperienceCard = () => {
     return (
         <>
-            <div className="job-card">
+            <div className="job-card" >
                 <div className="job-header">
                     <div className="left-text">
                         <h3 className="company">Meta</h3>
