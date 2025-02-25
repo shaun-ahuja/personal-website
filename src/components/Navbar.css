@@ -20,12 +20,12 @@
 
 }
 
-.name-logo:hover {
+/* .name-logo:hover {
     color: rgb(226, 226, 226);
     background-color: rgb(31, 31, 31);
     transition: 0.2s;
-    cursor: pointer;
-}
+    /* cursor: pointer; */
+/* } */
 
 .navbar-buttons {
     display: flex;
