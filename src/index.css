@@ -22,7 +22,7 @@ body {
 }
 
 .nameBox {
-  box-shadow: 0 0 0 1px rgb(42, 41, 41);
+  /* box-shadow: 0 0 0 1px rgb(42, 41, 41); */
   border-radius: 12px;
   display: flex;
   flex-direction: column;
