@@ -1,24 +1,3 @@
-// 'use client'; // Only needed for Next.js
-// import { useEffect } from 'react';
-// import useFluidCursor from '../hooks/useFluidCursor'; // Correct the path if needed
-
-// const FluidCursor = () => {
-//     useEffect(() => {
-//         useFluidCursor();
-//     }, []);
-
-//     return (
-//         <canvas
-//             id="fluid"
-//             className="absolute top-0 left-0 w-full h-full pointer-events-none z-[9999]"
-//             style={{ position: 'fixed', width: '100vw', height: '100vh' }}
-//         />
-//     );
-// };
-
-// export default FluidCursor;
-
-
 'use client'; // Only needed for Next.js
 
 import { useEffect } from 'react';
