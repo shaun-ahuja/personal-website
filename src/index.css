@@ -6,6 +6,14 @@
   margin: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+
 .box {
   display: flex;
   flex-direction: column;
