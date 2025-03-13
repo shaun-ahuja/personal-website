@@ -5,7 +5,7 @@ import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 import Spotify from './components/Spotify.jsx'
-import Spotlight from './components/Spotlight.jsx';
+// import Spotlight from './components/Spotlight.jsx';
 import FluidCursor from './components/FluidCursor.jsx'
 
 function App() {
