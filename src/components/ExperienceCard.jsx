@@ -19,7 +19,8 @@ export const ExperienceCard = () => {
                         <span className="job-date">(Incoming) Summer 2025</span>
                         <span className="job-location"><i>New York, USA</i></span>
                         <img
-                            src="./public/assets/Meta.png"
+                            // src="./public/assets/Meta.png"
+                            src="/assets/Meta.png"
                             alt="Meta Logo"
                             className="meta-logo"
                         />
