@@ -1,5 +1,5 @@
 import "./Name.css"
-import emaillogo from "/assets/emaillogo.png"
+import emaillogo from "/public/assets/emaillogo.png"
 
 function Name() {
 
