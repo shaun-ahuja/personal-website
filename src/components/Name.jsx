@@ -1,5 +1,5 @@
 import "./Name.css"
-// import email from "./src/assets/EmailLogo.png"
+import emaillogo from "/public/assets/emaillogo.png"
 
 function Name() {
 
@@ -10,9 +10,9 @@ function Name() {
                 <h1 className="name-title">Shaun Ahuja</h1>
                 <div className="social-media-container">
                     <a href="mailto:ahuja.shaun00@gmail.com" rel="noopener noreferrer">
-                        {/* <img src="./src/assets/EmailLogo.png" className="social-media" alt="Email" /> */}
-                        <img src="./public/assets/emaillogo.png" className="social-media" alt="Email" />
-                        {/* <img src={email} className="social-media" alt="Email" /> */}
+
+                        {/* <img src="./public/assets/emaillogo.png" className="social-media" alt="Email" /> */}
+                        <img src={emaillogo} className="social-media" alt="Email" />
                     </a>
                     <a href="https://www.linkedin.com/in/shaun-ahuja/" target="_blank" rel="noopener noreferrer">
                         <img src="./public/assets/LinkedinLogo.png" className="social-media" alt="LinkedIn" />
