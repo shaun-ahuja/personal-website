@@ -1,5 +1,9 @@
 import React from "react";
 import "./ExperienceCard.css"
+import meta from "/public/assets/Meta.png"
+import sunLife from "/public/assets/SunLife.png"
+import sharpStakes from "/public/assets/sharpStakes.png"
+import gnv from "/public/assets/GNV.png"
 
 export const ExperienceCard = () => {
     return (
@@ -19,7 +23,7 @@ export const ExperienceCard = () => {
                         <span className="job-date">(Incoming) Summer 2025</span>
                         <span className="job-location"><i>New York, USA</i></span>
                         <img
-                            src="./public/assets/Meta.png"
+                            src={meta}
                             alt="Meta Logo"
                             className="meta-logo"
                         />
@@ -43,7 +47,7 @@ export const ExperienceCard = () => {
                         <span className="job-date">May 2024 - August 2024</span>
                         <span className="job-location"><i>Toronto, Canada</i></span>
                         <img
-                            src="./public/assets/SunLife.png"
+                            src={sunLife}
                             alt="Sun Life Logo"
                             className="sunlife-logo"
                         />
@@ -66,7 +70,7 @@ export const ExperienceCard = () => {
                         <span className="job-date">January 2024 - April 2024</span>
                         <span className="job-location"><i>Toronto, Canada</i></span>
                         <img
-                            src="./public/assets/SharpStakes.png"
+                            src={sharpStakes}
                             alt="SharpStakes Logo"
                             className="sharpstakes-logo"
                         />
@@ -89,7 +93,7 @@ export const ExperienceCard = () => {
                         <span className="job-date">September 2023 - December 2023</span>
                         <span className="job-location"><i>Toronto, Canada</i></span>
                         <img
-                            src="./public/assets/GNV.png"
+                            src={gnv}
                             alt="SharpStakes Logo"
                             className="gnv-logo"
                         />
