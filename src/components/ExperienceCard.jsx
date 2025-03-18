@@ -2,7 +2,7 @@ import React from "react";
 import "./ExperienceCard.css"
 import meta from "/public/assets/Meta.png"
 import sunLife from "/public/assets/SunLife.png"
-import sharpStakes from "/public/assets/sharpStakes.png"
+import sharpStakes from "/public/assets/SharpStakes.png"
 import gnv from "/public/assets/GNV.png"
 
 export const ExperienceCard = () => {
