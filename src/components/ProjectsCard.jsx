@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectsCard.css"
+import blackGitHubLogo from "/public/assets/blackGitHubLogo.png"
 
 export const ProjectsCard = () => {
     return (
@@ -17,7 +18,7 @@ export const ProjectsCard = () => {
                     <div className="actions">
                         <a href="https://github.com/Nick1093/PBMify" target="_blank" className="btn">
                             <img
-                                src="./src/assets/blackGitHubLogo.png"
+                                src={blackGitHubLogo}
                                 alt="GitHub Logo"
                                 className="black-github-logo"
                             />
@@ -41,7 +42,7 @@ export const ProjectsCard = () => {
                     <div className="actions">
                         <a href="https://github.com/shaun-ahuja/MERN_AI_image_generator" target="_blank" className="btn">
                             <img
-                                src="./src/assets/blackGitHubLogo.png"
+                                src={blackGitHubLogo}
                                 alt="GitHub Logo"
                                 className="black-github-logo"
                             />
