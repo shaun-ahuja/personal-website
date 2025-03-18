@@ -1,6 +1,5 @@
 import React from "react";
-import "./ExperienceCard.css"
-import blackGitHubLogo from "./public/assets/blackGitHubLogo.png"
+
 
 export const ExperienceCard = () => {
     return (
