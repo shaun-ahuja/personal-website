@@ -167,5 +167,40 @@ body {
     padding: 0vh 6vw;
     /* Less padding for better visibility */
     aspect-ratio: 4 / 3;
+    color: rgb(159, 159, 159);
   }
+
+  .job-card {
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 450px;
+    /* Prevents it from being too large */
+    padding: 0vh 6vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+    /* More squared for better readability */
+  }
+
+  .project-card {
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 450px;
+    /* Prevents it from being too large */
+    padding: 0vh 6vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+    /* More squared for better readability */
+  }
+
+  .spotify-page {
+    padding-bottom: 10vh;
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 450px;
+    /* Prevents it from being too large */
+    padding: 0vh 6vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+  }
+
 }
