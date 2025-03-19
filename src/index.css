@@ -256,4 +256,12 @@ body {
     box-sizing: border-box !important;
   }
 
+  .sunlife-logo,
+  .meta-logo,
+  .sharpstakes-logo,
+  .gnv-logo {
+    /* display: none; */
+    padding-left: 1vw;
+  }
+
 }
