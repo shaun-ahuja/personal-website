@@ -156,9 +156,15 @@ body {
     /* Reduced from 10vh */
   }
 
+  .about-header {
+    font-size: clamp(1.5rem, 5vw, 2.3rem) !important;
+    margin-bottom: 2vh !important;
+    font-weight: 500 !important;
+  }
+
   .experience-header,
   .projects-header,
-  .about-header {
+  .song-intro {
     font-size: clamp(1.5rem, 5vw, 2.3rem);
     /* Increased from 1rem, 3.5vw, 1.8rem */
     margin-bottom: 2vh;
@@ -167,14 +173,11 @@ body {
     /* Made slightly bolder for emphasis */
   }
 
-  .song-intro {
+  /* .song-intro {
     margin-bottom: 1vh;
-    /* Fix negative margin issue */
     clear: both;
-    /* Prevent overlap */
     padding-top: 2vh;
-    /* Add some space */
-  }
+  } */
 
   .spotify-page {
     padding-bottom: 5vh;
@@ -202,32 +205,55 @@ body {
     margin-bottom: 3vh;
   }
 
-  .job-card {
+  /* .job-card {
     width: 85vw;
     max-width: 450px;
     padding: 2vh 4vw;
     aspect-ratio: auto;
-    /* Remove fixed aspect ratio */
     margin-bottom: 2vh;
     box-sizing: border-box;
-    /* Ensure padding doesn't add to width */
   }
 
-  /* Add this new rule to extend job descriptions */
   .job-description {
     width: 100%;
-    /* Take full width of parent */
     padding-right: 0;
-    /* Remove any right padding */
     box-sizing: border-box;
-    /* Include padding in width calculation */
     text-align: left;
-    /* Ensure text is left-aligned */
     word-wrap: break-word;
-    /* Allow long words to break */
     overflow-wrap: break-word;
-    /* Modern version of word-wrap */
+  } */
+
+  .job-card p,
+  .job-description,
+  .job-card div:not(.company-logo):not(.job-title):not(.job-date):not(.job-location) {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+    display: block !important;
   }
 
+  /* Make sure the job card has proper padding */
+  .job-card {
+    width: 85vw !important;
+    max-width: 450px !important;
+    padding: 3vh 4vw !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* Remove any potential width constraints on containing elements */
+  .job-card>div,
+  .job-card>section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
 
 }
