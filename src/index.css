@@ -108,99 +108,96 @@ body {
 @media (max-width: 600px) {
   .nameBox {
     width: 85vw;
-    /* Slightly wider for mobile */
     max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
-    /* More squared for better readability */
+    padding: 2vh 4vw;
+    aspect-ratio: auto;
+    /* Remove fixed aspect ratio */
+    margin-top: 10vh;
+    margin-bottom: 20vh;
   }
 
   .name-title {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    /* Scales smaller */
   }
 
   .name-description {
     font-size: clamp(0.9rem, 4vw, 1.1rem);
-    /* Readable on mobile */
     max-width: 30ch;
-    /* Prevents text from stretching */
   }
 
   .navbar {
-    /* gap: 2vw; More space between elements */
     padding: 1vh 3vw;
   }
 
   .name-logo {
     font-size: 0.6rem;
-    /* Reduce logo size */
   }
 
   .about-button,
   .projects-button {
     font-size: 0.7rem;
-    /* Shrink text */
     padding: 1px 2px;
-    /* Reduce padding */
   }
 
-  .about-header {
+  .about-container,
+  .experience-container {
     width: 85vw;
-    /* Slightly wider for mobile */
     max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
+    aspect-ratio: auto;
+    /* Remove fixed aspect ratio */
+    padding: 2vh 4vw;
+    margin-bottom: 5vh;
   }
 
-  .description-one,
-  .description-two,
-  .description-three {
-    width: 85vw;
-    /* Slightly wider for mobile */
-    max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
-    color: rgb(159, 159, 159);
+  .experience-box,
+  .projects-box {
+    margin-bottom: 5vh;
+    /* Reduced from 10vh */
   }
 
-  .job-card {
+  .song-intro {
+    margin-bottom: 1vh;
+    /* Fix negative margin issue */
+    clear: both;
+    /* Prevent overlap */
+    padding-top: 2vh;
+    /* Add some space */
+  }
+
+  .spotify-page {
+    padding-bottom: 5vh;
     width: 85vw;
-    /* Slightly wider for mobile */
     max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
-    /* More squared for better readability */
+    padding: 2vh 4vw;
+    aspect-ratio: auto;
+    /* Remove fixed aspect ratio */
+  }
+
+  .projects-container {
+    gap: 1.5rem;
+    /* Reduced gap for mobile */
+    flex-direction: column;
+    /* Stack projects vertically on mobile */
+    align-items: center;
   }
 
   .project-card {
     width: 85vw;
-    /* Slightly wider for mobile */
     max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
-    /* More squared for better readability */
+    padding: 2vh 4vw;
+    aspect-ratio: auto;
+    /* Remove fixed aspect ratio */
+    margin-bottom: 3vh;
   }
 
-  .spotify-page {
-    padding-bottom: 10vh;
+  .job-card {
     width: 85vw;
-    /* Slightly wider for mobile */
     max-width: 450px;
-    /* Prevents it from being too large */
-    padding: 0vh 6vw;
-    /* Less padding for better visibility */
-    aspect-ratio: 4 / 3;
+    padding: 2vh 4vw;
+    aspect-ratio: auto;
+    /* Remove fixed aspect ratio */
+    margin-bottom: 2vh;
   }
+
 
 }

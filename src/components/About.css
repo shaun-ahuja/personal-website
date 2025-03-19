@@ -5,6 +5,7 @@
     letter-spacing: -0.08em;
     word-spacing: 0.1em;
     font-family: 'Inter', sans-serif;
+    display: flex;
 }
 
 .description-one,
@@ -17,4 +18,6 @@
     letter-spacing: -0.03em;
     word-spacing: 0.05em;
     font-family: 'Inter', sans-serif;
+    display: flex;
+
 }
