@@ -146,4 +146,26 @@ body {
     padding: 1px 2px;
     /* Reduce padding */
   }
+
+  .about-header {
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 450px;
+    /* Prevents it from being too large */
+    padding: 0vh 6vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+  }
+
+  .description-one,
+  .description-two,
+  .description-three {
+    width: 85vw;
+    /* Slightly wider for mobile */
+    max-width: 450px;
+    /* Prevents it from being too large */
+    padding: 0vh 6vw;
+    /* Less padding for better visibility */
+    aspect-ratio: 4 / 3;
+  }
 }
