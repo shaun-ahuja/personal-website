@@ -111,19 +111,24 @@ body {
     max-width: 450px;
     padding: 2vh 4vw;
     aspect-ratio: auto;
-    /* Remove fixed aspect ratio */
     margin-top: 10vh;
     margin-bottom: 20vh;
   }
 
   .name-title {
     font-size: clamp(3rem, 6vw, 4rem);
+    /* NEW */
+    text-align: center;
   }
 
 
   .name-description {
     font-size: clamp(0.9rem, 4vw, 1.1rem);
     max-width: 30ch;
+    /* NEW */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .navbar {
@@ -145,21 +150,29 @@ body {
     width: 85vw;
     max-width: 450px;
     aspect-ratio: auto;
-    /* Remove fixed aspect ratio */
     padding: 2vh 4vw;
     margin-bottom: 5vh;
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .experience-box,
   .projects-box {
     margin-bottom: 5vh;
     /* Reduced from 10vh */
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-header {
     font-size: clamp(1.5rem, 5vw, 2.3rem) !important;
     margin-bottom: 2vh !important;
     font-weight: 500 !important;
+    /* NEW */
+    text-align: center !important;
   }
 
   .experience-header,
@@ -171,6 +184,8 @@ body {
     /* Slightly increased margin for better spacing */
     font-weight: 500;
     /* Made slightly bolder for emphasis */
+    /* NEW */
+    text-align: center;
   }
 
 
@@ -181,6 +196,9 @@ body {
     padding: 2vh 4vw;
     aspect-ratio: auto;
     /* Remove fixed aspect ratio */
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .projects-container {
@@ -196,27 +214,11 @@ body {
     max-width: 450px;
     padding: 2vh 4vw;
     aspect-ratio: auto;
-    /* Remove fixed aspect ratio */
     margin-bottom: 3vh;
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  /* .job-card {
-    width: 85vw;
-    max-width: 450px;
-    padding: 2vh 4vw;
-    aspect-ratio: auto;
-    margin-bottom: 2vh;
-    box-sizing: border-box;
-  }
-
-  .job-description {
-    width: 100%;
-    padding-right: 0;
-    box-sizing: border-box;
-    text-align: left;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  } */
 
   .job-card p,
   .job-description,
@@ -241,6 +243,9 @@ body {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
+    /* NEW */
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   /* Remove any potential width constraints on containing elements */
@@ -249,6 +254,8 @@ body {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+    /* NEW */
+    text-align: center !important;
   }
 
   .sunlife-logo,
@@ -256,12 +263,20 @@ body {
   .gnv-logo {
     /* display: none; */
     padding-left: 10vw;
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
 
   .sharpstakes-logo {
     padding-left: 10vw;
     padding-top: 2vh;
+    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
 }
