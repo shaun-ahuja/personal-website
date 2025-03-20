@@ -146,7 +146,8 @@ body {
   }
 
   .about-container,
-  .experience-container {
+  .experience-container,
+  .about-box {
     width: 85vw;
     max-width: 450px;
     aspect-ratio: auto;
