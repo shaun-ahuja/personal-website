@@ -159,8 +159,7 @@ body {
   }
 
   .experience-box,
-  .projects-box,
-  .about-box {
+  .projects-box {
     margin-bottom: 5vh;
     /* Reduced from 10vh */
     /* NEW */
@@ -174,6 +173,13 @@ body {
     font-weight: 500 !important;
     /* NEW */
     text-align: center !important;
+  }
+
+  /* Target any container that might be holding the header */
+  .about-container>*:first-child,
+  .about-section>*:first-child {
+    text-align: center !important;
+    width: 100% !important;
   }
 
   .experience-header,
