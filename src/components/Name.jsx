@@ -3,6 +3,7 @@ import emailLogo from "/public/assets/emaillogo.png"
 import LinkedinLogo from "/public/assets/LinkedinLogo.png"
 import xLogo from "/public/assets/XLogo.png"
 import githubLogo from "/public/assets/GitHubLogo.png"
+import resume from "/public/assets/ShaunResume.pdf"
 
 function Name() {
 
@@ -28,7 +29,7 @@ function Name() {
                         <img src={githubLogo} className="social-media" alt="GitHub" />
                     </a>
                 </div>
-                <a href="./public/assets/ShaunResume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href={resume} target="_blank" rel="noopener noreferrer">
                     <button className="resume-button">Resume</button>
                 </a>
                 <p className="personal-description">
