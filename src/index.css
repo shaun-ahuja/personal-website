@@ -146,8 +146,7 @@ body {
   }
 
   .about-container,
-  .experience-container,
-  .about-box {
+  .experience-container {
     width: 85vw;
     max-width: 450px;
     aspect-ratio: auto;
@@ -160,7 +159,8 @@ body {
   }
 
   .experience-box,
-  .projects-box {
+  .projects-box,
+  .about-box {
     margin-bottom: 5vh;
     /* Reduced from 10vh */
     /* NEW */
