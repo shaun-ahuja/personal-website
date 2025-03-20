@@ -6,7 +6,7 @@ import useFluidCursor from '../hooks/useFluidCursor'; // Ensure correct path
 const FluidCursor = () => {
     useEffect(() => {
         useFluidCursor();
-    }, []);
+    },);
 
     return (
         <canvas
