@@ -112,20 +112,25 @@ body {
     padding: 2vh 4vw;
     aspect-ratio: auto;
     margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-bottom: 40vh;
+    box-sizing: border-box;
   }
 
   .name-title {
     font-size: clamp(3rem, 6vw, 4rem);
-    /* NEW */
     text-align: center;
+    /* NEW */
+    width: 100%;
+    /* Ensure it doesn't overflow */
+    word-wrap: break-word;
+    /* Allow text to wrap */
   }
 
 
   .name-description {
     font-size: clamp(0.9rem, 4vw, 1.1rem);
-    max-width: 30ch;
-    /* NEW */
+    /* max-width: 30ch; */
+    max-width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -133,6 +138,8 @@ body {
 
   .navbar {
     padding: 1vh 3vw;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .name-logo {
@@ -150,9 +157,8 @@ body {
     width: 85vw;
     max-width: 450px;
     aspect-ratio: auto;
-    padding: 2vh 4vw;
-    margin-bottom: 5vh;
-    /* NEW */
+    padding: 2vh 0vw;
+    margin-bottom: 7vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -161,8 +167,6 @@ body {
   .experience-box,
   .projects-box {
     margin-bottom: 5vh;
-    /* Reduced from 10vh */
-    /* NEW */
     margin-left: auto;
     margin-right: auto;
   }
@@ -171,27 +175,20 @@ body {
     font-size: clamp(1.5rem, 5vw, 2.3rem) !important;
     margin-bottom: 2vh !important;
     font-weight: 500 !important;
-    /* NEW */
-    text-align: center !important;
-  }
-
-  /* Target any container that might be holding the header */
-  .about-container>*:first-child,
-  .about-section>*:first-child {
     text-align: center !important;
     width: 100% !important;
+    /* Ensure full width */
+    display: block !important;
+    /* Make sure it's a block element */
   }
+
 
   .experience-header,
   .projects-header,
   .song-intro {
     font-size: clamp(1.5rem, 5vw, 2.3rem);
-    /* Increased from 1rem, 3.5vw, 1.8rem */
     margin-bottom: 2vh;
-    /* Slightly increased margin for better spacing */
     font-weight: 500;
-    /* Made slightly bolder for emphasis */
-    /* NEW */
     text-align: center;
   }
 
@@ -202,18 +199,26 @@ body {
     max-width: 450px;
     padding: 2vh 4vw;
     aspect-ratio: auto;
-    /* Remove fixed aspect ratio */
-    /* NEW */
     margin-left: auto;
     margin-right: auto;
   }
 
+  .song-justification {
+    padding-bottom: 5vh;
+    width: 90%;
+    max-width: 450px;
+    padding: 2vh 4vw;
+    aspect-ratio: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
   .projects-container {
     gap: 1.5rem;
-    /* Reduced gap for mobile */
     flex-direction: column;
-    /* Stack projects vertically on mobile */
     align-items: center;
+    margin-bottom: 5vh;
   }
 
   .project-card {
@@ -222,7 +227,6 @@ body {
     padding: 2vh 4vw;
     aspect-ratio: auto;
     margin-bottom: 3vh;
-    /* NEW */
     margin-left: auto;
     margin-right: auto;
   }
@@ -241,7 +245,6 @@ body {
     display: block !important;
   }
 
-  /* Make sure the job card has proper padding */
   .job-card {
     width: 85vw !important;
     max-width: 450px !important;
@@ -250,27 +253,28 @@ body {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
-    /* NEW */
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* Remove any potential width constraints on containing elements */
   .job-card>div,
   .job-card>section {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    /* NEW */
     text-align: center !important;
   }
 
-  .sunlife-logo,
-  .meta-logo,
-  .gnv-logo {
-    /* display: none; */
+  .meta-logo {
     padding-left: 10vw;
-    /* NEW */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .sunlife-logo,
+  .gnv-logo {
+    padding-left: 60vw;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -279,8 +283,6 @@ body {
 
   .sharpstakes-logo {
     padding-left: 10vw;
-    padding-top: 2vh;
-    /* NEW */
     margin-left: auto;
     margin-right: auto;
     display: block;
