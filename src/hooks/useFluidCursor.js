@@ -1024,12 +1024,24 @@ const useFluidCursor = () => {
         if (aspectRatio > 1) radius *= aspectRatio;
         return radius;
     }
+
+    // Initialize the update on page load to ensure the animation is ready
+    window.addEventListener('load', () => {
+        update();
+    });
+
     window.addEventListener('mousedown', (e) => {
         let pointer = pointers[0];
         let posX = scaleByPixelRatio(e.clientX);
         let posY = scaleByPixelRatio(e.clientY);
         updatePointerDownData(pointer, -1, posX, posY);
         clickSplat(pointer);
+    });
+
+    // Fix initial mousemove handler to ensure it always runs
+    window.addEventListener('load', () => {
+        // Set up the one-time handler again
+        document.body.addEventListener('mousemove', handleFirstMouseMove);
     });
     document.body.addEventListener('mousemove', function handleFirstMouseMove(e) {
         let pointer = pointers[0];
@@ -1047,6 +1059,14 @@ const useFluidCursor = () => {
         let color = pointer.color;
         updatePointerMoveData(pointer, posX, posY, color);
     });
+
+
+    // Fix initial touchstart handler to ensure it always runs
+    window.addEventListener('load', () => {
+        // Set up the one-time handler again
+        document.body.addEventListener('touchstart', handleFirstTouchStart);
+    });
+
     document.body.addEventListener(
         'touchstart',
         function handleFirstTouchStart(e) {
@@ -1133,6 +1153,7 @@ const useFluidCursor = () => {
         c.b *= 0.15;
         return c;
     }
+
     function HSVtoRGB(h, s, v) {
         let r, g, b, i, f, p, q, t;
         i = Math.floor(h * 6);
