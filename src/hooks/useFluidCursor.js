@@ -18,6 +18,14 @@ const useFluidCursor = () => {
         BACK_COLOR: { r: 0.5, g: 0, b: 0 },
         TRANSPARENT: true,
     };
+    const pointers = [];
+    pointers.push(new pointerPrototype());
+    const { gl, ext } = getWebGLContext(canvas);
+    if (!ext.supportLinearFiltering) {
+        config.DYE_RESOLUTION = 256;
+        config.SHADING = false;
+    }
+
     function pointerPrototype() {
         this.id = -1;
         this.texcoordX = 0;
@@ -30,13 +38,7 @@ const useFluidCursor = () => {
         this.moved = false;
         this.color = [0, 0, 0];
     }
-    const pointers = [];
-    pointers.push(new pointerPrototype());
-    const { gl, ext } = getWebGLContext(canvas);
-    if (!ext.supportLinearFiltering) {
-        config.DYE_RESOLUTION = 256;
-        config.SHADING = false;
-    }
+
     function getWebGLContext(canvas) {
         const params = {
             alpha: true,
@@ -92,6 +94,18 @@ const useFluidCursor = () => {
             },
         };
     }
+
+    // Add the initial mousemove listener on page load
+    // NEW
+    const handleFirstMouseMove = (e) => {
+        let pointer = pointers[0];
+        let posX = scaleByPixelRatio(e.clientX);
+        let posY = scaleByPixelRatio(e.clientY);
+        let color = generateColor();
+        update();
+        updatePointerMoveData(pointer, posX, posY, color);
+        document.body.removeEventListener('mousemove', handleFirstMouseMove);
+    };
     function getSupportedFormat(gl, internalFormat, format, type) {
         if (!supportRenderTextureFormat(gl, internalFormat, format, type)) {
             switch (internalFormat) {
@@ -1193,5 +1207,6 @@ const useFluidCursor = () => {
         }
         return hash;
     }
+    update();
 };
 export default useFluidCursor;
