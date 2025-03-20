@@ -28,7 +28,7 @@ function Name() {
                         <img src={githubLogo} className="social-media" alt="GitHub" />
                     </a>
                 </div>
-                <a href="./src/assets/ShaunResume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="./public/assets/ShaunResume.pdf" target="_blank" rel="noopener noreferrer">
                     <button className="resume-button">Resume</button>
                 </a>
                 <p className="personal-description">
