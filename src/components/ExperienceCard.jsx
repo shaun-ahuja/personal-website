@@ -61,7 +61,7 @@ export const ExperienceCard = () => {
                         <h3 className="company">SharpStakes</h3>
                         <p className="job-title">Software Engineer Intern</p>
                         <p className="job-description">
-                            Used Discord API & Python to build and host (AWS EC2) bots and hedging algorithims for +5,000 users.
+                            Used Discord API & Python to build and host (AWS EC2) bots and hedging algorithms for +5,000 users.
                         </p>
 
                     </div>
