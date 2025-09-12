@@ -14,12 +14,12 @@
     max-width: 350px;
     margin-bottom: 2vh;
     flex: 1;
-    
+
 }
 
 .project-card:hover {
     background-color: rgb(12, 12, 14);
-    
+
 }
 
 .project-card h3 {

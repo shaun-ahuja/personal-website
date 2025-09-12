@@ -14,7 +14,7 @@ export const ExperienceCard = () => {
                         <h3 className="company">Meta</h3>
                         <p className="job-title">Software Engineer Intern</p>
                         <p className="job-description">
-                            Incoming Software Engineer Intern at Meta for Summer 2025.
+                            Built a debugger in GraphQL, PHP, and React.js for advertisement infrastructure.
                         </p>
 
                     </div>
