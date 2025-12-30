@@ -8,6 +8,30 @@ import gnv from "/public/assets/GNV.png"
 export const ExperienceCard = () => {
     return (
         <>
+
+            <div className="job-card" >
+                <div className="job-header">
+                    <div className="left-text">
+                        <h3 className="company">Meta</h3>
+                        <p className="job-title">Software Engineer Intern</p>
+                        <p className="job-description">
+                            Incoming Summer 2026.
+                        </p>
+
+                    </div>
+
+                    <div className="job-details">
+                        <span className="job-date">(Incoming) Summer 2026</span>
+                        <span className="job-location"><i>New York, USA</i></span>
+                        <img
+                            src={meta}
+                            alt="Meta Logo"
+                            className="meta-logo"
+                        />
+                    </div>
+                </div>
+            </div>
+
             <div className="job-card" >
                 <div className="job-header">
                     <div className="left-text">
@@ -20,7 +44,7 @@ export const ExperienceCard = () => {
                     </div>
 
                     <div className="job-details">
-                        <span className="job-date">(Incoming) Summer 2025</span>
+                        <span className="job-date">Summer 2025</span>
                         <span className="job-location"><i>New York, USA</i></span>
                         <img
                             src={meta}
