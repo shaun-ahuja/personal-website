@@ -24,6 +24,14 @@
     {
       "source": "/ramp/credit/",
       "destination": "/ramp/credit/index.html"
+    },
+    {
+      "source": "/ramp/FDE",
+      "destination": "/ramp/FDE/index.html"
+    },
+    {
+      "source": "/ramp/FDE/",
+      "destination": "/ramp/FDE/index.html"
     }
   ]
 }
