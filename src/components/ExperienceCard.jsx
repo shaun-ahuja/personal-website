@@ -4,7 +4,7 @@ const experiences = [
     {
         company: "Meta",
         title: "Software Engineer Intern",
-        description: "Built Instagram photo and video comment replies, interactive link previews, and GraphQL/REST infrastructure. Migrated like/unlike endpoints from Objective-C to Swift.",
+        description: "Designed a Cash Out feature for Meta’s prediction market app and enabled photo and video replies to Instagram comments.",
         date: "May 2026 – August 2026",
         location: "New York, USA",
         logo: "Meta.png",
@@ -13,7 +13,7 @@ const experiences = [
     {
         company: "Mustang Capital",
         title: "Quantitative Developer",
-        description: "Built event-driven market making for prediction markets, with live WebSocket order books, low-latency order management, and inventory-aware sizing, spread controls, and real-time risk tracking.",
+        description: "Built market-making systems for Kalshi and Polymarket using WebSocket order books and low-latency order management.",
         date: "September 2025 – April 2026",
         location: "Remote",
         logo: "MustangCapital.jpg",
