@@ -16,6 +16,14 @@
     {
       "source": "/ramp/digital-assets/",
       "destination": "/ramp/digital-assets/index.html"
+    },
+    {
+      "source": "/ramp/credit",
+      "destination": "/ramp/credit/index.html"
+    },
+    {
+      "source": "/ramp/credit/",
+      "destination": "/ramp/credit/index.html"
     }
   ]
 }
