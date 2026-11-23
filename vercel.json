@@ -1,7 +1,21 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/ramp", "destination": "/ramp/index.html" },
-    { "source": "/ramp/", "destination": "/ramp/index.html" }
+    {
+      "source": "/ramp",
+      "destination": "/ramp/index.html"
+    },
+    {
+      "source": "/ramp/",
+      "destination": "/ramp/index.html"
+    },
+    {
+      "source": "/ramp/digital-assets",
+      "destination": "/ramp/digital-assets/index.html"
+    },
+    {
+      "source": "/ramp/digital-assets/",
+      "destination": "/ramp/digital-assets/index.html"
+    }
   ]
 }
