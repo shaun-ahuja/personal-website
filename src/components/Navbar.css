@@ -20,13 +20,6 @@
 
 }
 
-/* .name-logo:hover {
-    color: rgb(226, 226, 226);
-    background-color: rgb(31, 31, 31);
-    transition: 0.2s;
-    /* cursor: pointer; */
-/* } */
-
 .navbar-buttons {
     display: flex;
     justify-content: flex-end;
@@ -55,4 +48,18 @@
     background-color: rgb(31, 31, 31);
     transition: 0.2s;
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .navbar-buttons {
+        gap: 0.4rem;
+        align-items: center;
+    }
+    .about-button, .projects-button, .experience-button {
+        font-size: 0.875rem;
+        margin-left: 0;
+        padding: 0.35rem 0.45rem;
+    }
+    .name-logo {
+        flex-shrink: 0;
+    }
 }

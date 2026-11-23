@@ -1,21 +1,12 @@
 import ProjectsCard from "./ProjectsCard.jsx";
 
-function Projects() {
+export default function Projects() {
     return (
-        <>
+        <section className="projects-section">
             <h2 className="projects-header" id="projects-anchor">Projects</h2>
-
-            <div className="projects-container">
-                <div className="projects-box">
-
-                    <ProjectsCard />
-                </div>
+            <div className="projects-box projects-container">
+                <ProjectsCard />
             </div>
-        </>
+        </section>
     );
-
-
 }
-
-export default Projects
-

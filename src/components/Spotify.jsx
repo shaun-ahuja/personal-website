@@ -8,8 +8,8 @@ function Spotify() {
             <p className="song-justification">(I love the premade playlists that Spotify gives me)</p>
             <div className="spotify-page">
                 <iframe
+                    title="My favourite R&B playlist on Spotify"
                     style={{ borderRadius: "12px" }}
-                    // src="https://open.spotify.com/embed/playlist/37i9dQZF1EQoqCH7BwIYb7"
                     src="https://open.spotify.com/embed/playlist/37i9dQZF1EQoqCH7BwIYb7?utm_source=generator&theme=0"
                     width="100%"
                     height="600"

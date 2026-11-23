@@ -9,6 +9,8 @@
 }
 
 .resume-button {
+    text-decoration: none;
+    display: inline-block;
     color: rgb(226, 226, 226);
     background-color: rgb(31, 31, 31);
     font-size: 1.2rem;

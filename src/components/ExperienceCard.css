@@ -31,6 +31,7 @@
     /* justify-content: space-between; */
     align-items: flex-start;
     width: 100%;
+    gap: 1.5rem;
 }
 
 .company {
@@ -124,4 +125,53 @@
     flex-shrink: 1;
 
     padding-bottom: 0.7vh;
+}
+.left-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.job-details {
+    flex-shrink: 0;
+}
+
+.job-details img {
+    object-fit: contain;
+}
+
+.mustang-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 4px;
+    margin-top: 0.7rem;
+}
+
+@media (max-width: 600px) {
+    .job-card {
+        width: 100%;
+        padding: 1.25rem;
+    }
+    .job-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .job-details {
+        width: 100%;
+        margin-left: 0;
+        align-items: flex-start;
+        text-align: left;
+        position: relative;
+        padding-right: 5rem;
+        box-sizing: border-box;
+        min-height: 3.25rem;
+    }
+    .job-date, .job-location {
+        white-space: normal;
+    }
+    .job-details img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0;
+    }
 }
