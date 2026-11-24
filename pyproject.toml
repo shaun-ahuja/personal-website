@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shaun-card"
+version = "0.1.0"
+description = "Shaun Ahuja's terminal introduction"
+requires-python = ">=3.10"
+dependencies = ["rich>=13.7,<15"]
+
+[project.scripts]
+shaun = "shaun:main"
+
+[tool.setuptools]
+py-modules = ["shaun"]
