@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/cli",
+      "destination": "https://raw.githubusercontent.com/shaun-ahuja/personal-website/main/run-shaun.sh"
+    },
+    {
       "source": "/ramp",
       "destination": "/ramp/index.html"
     },
