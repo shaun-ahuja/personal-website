@@ -18,5 +18,5 @@ curl -fsSL https://raw.githubusercontent.com/shaun-ahuja/personal-website/main/s
 export UV_CACHE_DIR="$shaun_runtime/cache"
 export UV_PYTHON_INSTALL_DIR="$shaun_runtime/python"
 export UV_PYTHON_PREFERENCE=only-managed
-"$shaun_runtime/bin/uv" --quiet run --no-project --python 3.12 \
+"$shaun_runtime/bin/uv" --quiet run --script --python 3.12 \
     --with 'rich>=13.7,<15' "$shaun_runtime/shaun.py"
